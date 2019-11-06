@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('./connection.js');
 
 const ExcersizeSchema = new mongoose.Schema ({
     excersizeName: String,
@@ -20,11 +20,11 @@ const createExcersize = (newExcersize) => {
     return excersizeCollection.create(newExcersize)
 }
 //update
-const updateExcersize = () => {
-    return excersizeCollection.update({_id: id}, newExcersize)
+const updateExcersize = (id, newExcersize) => {
+    return excersizeCollection.updateOne({_id: id}, newExcersize)
 }
 //delete
-const deleteExcersize = () => {
+const deleteExcersize = (id) => {
     return excersizeCollection.deleteOne({_id: id})
 }
 

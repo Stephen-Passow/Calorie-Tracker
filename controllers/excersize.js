@@ -8,6 +8,7 @@ const excersizeRouter = express.Router()
 excersizeRouter.get('/excersize', (req, res) => {
   excersizeApi.getAllExcersize()
     .then((allExcersize) => {
+        console.log('allExcersize', allExcersize)
       res.json(allExcersize)
     })
 })
@@ -16,30 +17,34 @@ excersizeRouter.get('/excersize', (req, res) => {
 excersizeRouter.get('/excersize/:id', (req, res) => {
   excersizeApi.getSingleExcersize(req.params.id)
     .then((singleExcersize) => {
+        console.log('singleExcersize', singleExcersize)
     res.json(singleExcersize)
   })
 })
 
 //create excersize
-excersizeRouter.post('/excersize', (res, res) => {
+excersizeRouter.post('/excersize', (req, res) => {
   excersizeApi.createExcersize(req.body)
   .then((newExcersize) => {
+      console.log('newExcersize',newExcersize)
     res.json(newExcersize)
   })
 })
 
 //update excersize
-excersizeRouter.put('/excersize', (req, res) => {
-  excersizeApi.updateExcersize(req.body, req.params.id)
+excersizeRouter.put('/excersize/:id', (req, res) => {
+  excersizeApi.updateExcersize(req.params.id, req.body)
   .then((updatedExcersize) => {
+      console.log('updatedExcersize', updatedExcersize)
     res.json(updatedExcersize)
   })
 })
 
 //delete excersize
-excersizeRouter.delete('/excersize', (req, res) => {
+excersizeRouter.delete('/excersize/:id', (req, res) => {
   excersizeApi.deleteExcersize(req.params.id)
   .then((deletedExcersize) => {
+      console.log(deletedExcersize,'deletedExcersize')
     res.json(deletedExcersize)
   })
 })
