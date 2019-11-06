@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
 
 const ActivitySchema = new mongoose.Schema ({
-    onFoot: String,
-    swimming: String,
-    cycling: String
+    activityName: String,
 })
+
 const activityCollection = mongoose.model('activity', ActivitySchema);
 
 //all activities
-const getAllActivitity = () => {
+const getAllActivity = () => {
     return activityCollection.find({})
 }
 //single activity
@@ -28,9 +27,8 @@ const deleteActivity = () => {
     return activityCollection.deleteOne({_id: id})
 }
 
-
 module.exports = {
-getAllActivitity,
+getAllActivity,
 getSingleActivity,
 createActivity,
 updateActivity,
