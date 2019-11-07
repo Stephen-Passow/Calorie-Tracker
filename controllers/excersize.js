@@ -13,6 +13,16 @@ excersizeRouter.get('/excersize', (req, res) => {
     })
 })
 
+//get excersizes by specified id
+excersizeRouter.get('/excersize/:id', (req, res) => {
+  excersizeApi.getExcersizeByType(req.params.id)
+    .then((excersizeByType) => {
+        console.log('excersizeByType', excersizeByType)
+      res.json(excersizeByType)
+    })
+})
+
+
 //single excersize
 excersizeRouter.get('/excersize/:id', (req, res) => {
   excersizeApi.getSingleExcersize(req.params.id)

@@ -1,7 +1,7 @@
 const mongoose = require('./connection.js');
 
 const ActivitySchema = new mongoose.Schema ({
-    activityName: String,
+    activityName: String
 })
 
 const activityCollection = mongoose.model('activity', ActivitySchema);
