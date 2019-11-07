@@ -2,7 +2,7 @@
 const mongoose = require('./connection.js');
 
 const ExcersizeSchema = new mongoose.Schema ({
-    excersizeName: String,
+    name: String,
     caloriesPerHour: Number,
     description: String,
     excersizeId: String
@@ -13,8 +13,9 @@ const excersizeCollection = mongoose.model('excersize', ExcersizeSchema);
 const getAllExcersize = () => {
     return excersizeCollection.find({})
 }
-const getExcersizeByType = (id) => {
-    return excersizeCollection.find({id})
+//excersize by type
+const getExcersizeByType = (excersizeId) => {
+    return excersizeCollection.findById({excersizeId})
 }
 //single excersize
 const getSingleExcersize = (id) => {
