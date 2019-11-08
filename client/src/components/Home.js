@@ -23,7 +23,7 @@ const workouts = {
 
 export default class Excersizes extends Component {
     state = {
-        exerciseType: 'onFoot'
+        exerciseType: 'water'
     }
     setExcersize() {
         return 
