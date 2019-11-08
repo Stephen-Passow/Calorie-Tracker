@@ -3,15 +3,21 @@ import ExcersizeTypes from './ExcersizeTypes'
 
 
 const workouts = {
-    land: [
+    onFoot: [
         'walking',
-        'running'
+        'running',
+        'hiking'
     ],
     water: [
         'swimming',
         'surfing'
+    ],
+    cycling: [
+        'mountainBiking',
+        'trailRiding',
+        'streetRiding'
     ]
-}
+};
 
 
 export default class Excersizes extends Component {

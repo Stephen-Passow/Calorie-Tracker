@@ -4,7 +4,7 @@ import Workouts from './Workouts'
 
 
 const workouts = {
-    land: [
+    onFoot: [
         'walking',
         'running',
         'hiking'
@@ -12,13 +12,18 @@ const workouts = {
     water: [
         'swimming',
         'surfing'
+    ],
+    cycling: [
+        'mountainBiking',
+        'trailRiding',
+        'streetRiding'
     ]
 };
 
 
 export default class Excersizes extends Component {
     state = {
-        exerciseType: 'land'
+        exerciseType: 'onFoot'
     }
 
     getWorkouts() {

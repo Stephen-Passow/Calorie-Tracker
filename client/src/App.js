@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import './App.css';
-import ExcersiseList from './components/ExcersizeList.jsx'
+import Home from './components/Home'
 
 class App extends React.Component {
   render() {
@@ -9,12 +9,11 @@ class App extends React.Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact path="/" component={ExcersiseList}/>
+            <Route exact path="/" component={Home} />
           </Switch>
         </Router>
       </div>
     );
   }
 }
-
 export default App;
