@@ -7,7 +7,7 @@ export default class ExcersizeList extends Component {
     state = {
         allExcersizes: []
     }
-    
+
     componentDidMount() {
         axios.get('/excersize')
             .then((res) => {
@@ -17,7 +17,7 @@ export default class ExcersizeList extends Component {
     render() {
         return (
             <div>
-            <h2>All Excersizes</h2>
+                <h2>All Excersizes</h2>
                 {this.state.allExcersizes.map((excersize) => {
                     return (<p>{excersize.name}</p>)
                 })}

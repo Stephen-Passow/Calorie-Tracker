@@ -25,7 +25,9 @@ export default class Excersizes extends Component {
     state = {
         exerciseType: 'onFoot'
     }
-
+    setExcersize() {
+        return 
+    }
     getWorkouts() {
         return workouts[this.state.exerciseType];
     }
