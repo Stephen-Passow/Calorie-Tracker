@@ -4,33 +4,33 @@ import Workouts from './Workouts'
 
 
 const workouts = {
-  land: [
-		'walking',
-    'running',
-    'hiking'
-	],
-  	water: [
-    	'swimming',
-      'surfing'
+    land: [
+        'walking',
+        'running',
+        'hiking'
+    ],
+    water: [
+        'swimming',
+        'surfing'
     ]
 };
 
 
 export default class Excersizes extends Component {
-  state = {
-    exerciseType: 'land'
-  }
+    state = {
+        exerciseType: 'land'
+    }
 
-  getWorkouts() {
-    return workouts[this.state.exerciseType];
-  }
+    getWorkouts() {
+        return workouts[this.state.exerciseType];
+    }
 
     render() {
         return (
             <div>
-            <h1>HOME</h1>
-              <ExcersizeTypes />
-              <Workouts workouts={this.getWorkouts()} />
+                <h1>HOME</h1>
+                <ExcersizeTypes />
+                <Workouts workouts={this.getWorkouts()} />
             </div>
         )
     }
