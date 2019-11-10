@@ -8,8 +8,9 @@ export default class Workouts extends Component {
                 <h1>Workouts </h1>
                 <select name="" id="workouts">
                     {this.props.workouts.map(item => {
+                    console.log({item})
                          return <option value={item}>{item}</option>
-                    })}
+                        })}
                 </select>
             </div>
         );
