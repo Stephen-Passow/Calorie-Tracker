@@ -38,7 +38,7 @@ export default class Excersizes extends Component {
     render() {
         return (
             <div>
-                <h1>HOME</h1>
+                <h1>Calorie Counter!</h1>
                 <ExcersizeTypes />
                 <Workouts workouts={this.getWorkouts()} />
                 <LenthOfWorkout />
