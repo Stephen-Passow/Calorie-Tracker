@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class LenthOfWorkout extends Component {
     render() {
         return (
-            <div>
+            <div className="lengthOfWorkout">
             <h3>Length of Workout</h3>
                 
                 <label htmlFor="lengthOfWorkout">How long did you workout?</label>
