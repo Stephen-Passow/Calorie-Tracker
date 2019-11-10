@@ -6,20 +6,20 @@ import LenthOfWorkout from './LenthOfWorkout'
 
 const workouts = {
     onFoot: [
-        'walking',
-        'running',
-        'hiking'
+        'Walking',
+        'Running',
+        'Hiking'
     ],
     sports: [
-        'basketball',
-        'football',
-        'pingPing',
-        'soccer'
+        'Basketball',
+        'Football',
+        'Ping Pong',
+        'Soccer'
     ],
     cycling: [
-        'mountainBiking',
-        'trailRiding',
-        'streetRiding'
+        'Mountain Biking',
+        'Trail Riding',
+        'Street Riding'
     ]
 };
 

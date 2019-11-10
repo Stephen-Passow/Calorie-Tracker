@@ -11,10 +11,10 @@ export default class ExcersizeTypes extends Component {
             <div>
                 <label htmlFor="workouts">Choose a workout type:</label>
 
-                <select onChange={this.handleChange} name="" id="workouts">
+                <select onChange={this.handleChange} id="workouts">
                     <option value="">--Please choose an option--</option>
                     <option /*onClick={this.}*/ value="onFoot">On Foot</option>
-                    <option value="water">Water</option>
+                    <option value="sports">Sports</option>
                     <option value="cycling">Cycling</option>
                 </select>
             </div>
