@@ -13,7 +13,7 @@ export default class ExcersizeTypes extends Component {
 
                 <select onChange={this.handleChange} id="workouts">
                     <option value="">--Please choose an option--</option>
-                    <option /*onClick={this.}*/ value="onFoot">On Foot</option>
+                    <option value="onFoot">On Foot</option>
                     <option value="sports">Sports</option>
                     <option value="cycling">Cycling</option>
                 </select>
