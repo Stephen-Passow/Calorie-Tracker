@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import './App.css';
 import Home from './components/Home'
 import Description from './components/Descriptions'
+import SubmitNewWorkout from './components/SubmitNewWorkout'
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/description" component={Description} />
+            <Route exact path="/SubmitNewWorkout" component={SubmitNewWorkout} />
           </Switch>
         </Router>
       </div>
