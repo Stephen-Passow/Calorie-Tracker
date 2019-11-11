@@ -3,6 +3,7 @@ import ExcersizeTypes from './ExcersizeTypes'
 import Workouts from './Workouts'
 import LenthOfWorkout from './LenthOfWorkout'
 import CaloriesPerHour from './CaloriesPerHour'
+import { Link } from 'react-router-dom'
 
 export default class Excersizes extends Component {
     render() {
@@ -13,6 +14,7 @@ export default class Excersizes extends Component {
                 <Workouts />
                 <LenthOfWorkout />
                 <CaloriesPerHour />
+                <Link to="/SubmitNewWorkout">Suggest a new Workout</Link>
             </div>
         )
     }

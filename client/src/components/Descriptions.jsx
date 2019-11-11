@@ -6,8 +6,8 @@ export default class Descriptions extends Component {
     render() {
         return (
             <div>
-                <h1>Benefits of excersizing</h1>
                 <div>
+                <h1>Benefits of excersizing</h1>
 <h3>1. Exercise controls weight</h3>
 <p>Exercise can help prevent excess weight gain or help maintain weight loss. When you engage in physical activity, you burn calories. The more intense the activity, the more calories you burn.</p>
 
