@@ -16,6 +16,7 @@
 //         );
 //     }
 // }
+
 import React, { Component } from 'react'
 
 export default class Workouts extends Component {
@@ -80,22 +81,19 @@ export default class Workouts extends Component {
             }
         ]
 
-        const firstDDValue = 'sport';
+        const firstDDValue = '';
         const timeDDValue = 1.5;
-        
-        
         
         const filteredWorkouts = workouts.filter(item => item.type === firstDDValue);
         
         
-        filteredWorkouts.map(item => {
-            return <p> {item.intensityLevel * timeDDValue} </p>;
+        filteredWorkouts.map((item) => {
+            return <p> {item.caloriesPerHour * timeDDValue} </p>;
         })
 
-        
+
         return (
             <div>
-                <h6>Workouts:</h6>
                 <label htmlFor='workouts'>Now choose a workout: </label>
                 <select onChange={this.handleChange} id="workouts">
                 <option></option>
