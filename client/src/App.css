@@ -3,6 +3,10 @@
 }
 .App {
   text-align: center;
-  background: #72d8f5;
+  background: hsl(193, 87%, 70%);
   height: 725px;
+}
+.caloriesPerHour {
+  font: 50px;
+  color: red;
 }

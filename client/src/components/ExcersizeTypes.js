@@ -10,9 +10,9 @@ export default class ExcersizeTypes extends Component {
     render() {
         return (
             <div>
-                <label htmlFor="workouts">First choose a type of excersize:  </label>
+                <label htmlFor="activities">First choose a type of excersize:  </label>
 
-                <select onChange={this.handleChange} id="workouts">
+                <select onChange={this.handleChange} id="activities">
                     <option value="">--Please choose an option--</option>
                     <option value="onFoot">On Foot</option>
                     <option value="sports">Sports</option>

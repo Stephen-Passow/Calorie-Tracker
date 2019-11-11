@@ -27,6 +27,9 @@ export default class Workouts extends Component {
     // }
 
 
+    handleChange = e => {
+        console.log(e.target.type)
+    };
     render() {
 
         const workouts = [
@@ -79,18 +82,22 @@ export default class Workouts extends Component {
 
         const firstDDValue = 'sport';
         const timeDDValue = 1.5;
+        
+        
+        
         const filteredWorkouts = workouts.filter(item => item.type === firstDDValue);
         
         
         filteredWorkouts.map(item => {
             return <p> {item.intensityLevel * timeDDValue} </p>;
         })
-        
-        
-        
         return (
             <div>
                 <h6>Workouts:</h6>
+                <label htmlFor='workouts'>Now choose a workout: </label>
+                <select onChange={this.handleChange} id="workouts">
+                <option></option>
+                    </select>
             </div>
         )
     }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ExcersizeTypes from './ExcersizeTypes'
 import Workouts from './Workouts'
 import LenthOfWorkout from './LenthOfWorkout'
+import CaloriesPerHour from './CaloriesPerHour'
 
 export default class Excersizes extends Component {
     state = {
@@ -14,6 +15,7 @@ export default class Excersizes extends Component {
                 <ExcersizeTypes />
                 <Workouts />
                 <LenthOfWorkout />
+                <CaloriesPerHour />
             </div>
         )
     }
