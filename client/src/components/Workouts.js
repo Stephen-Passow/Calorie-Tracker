@@ -1,18 +1,92 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+
+// export default class Workouts extends Component {
+//     render() {
+//         console.log('prop: ', this.props.workouts)
+//         return (
+//             <div>
+//                 <h1>Now choose the workout you will be doing!</h1>
+//                 <select id="workouts">
+//                     {this.props.workouts.map(item => {
+//                     console.log({item})
+//                          return <option value={item}>{item}</option>
+//                         })}
+//                 </select>
+//             </div>
+//         );
+//     }
+// }
+import React, { Component } from 'react'
 
 export default class Workouts extends Component {
+    // getWorkouts() {
+    //     return workouts[this.state.exerciseType];
+    // }
     render() {
-        console.log('prop: ', this.props.workouts)
+
+const workouts = [
+    {
+        activity: 'Soccer',
+        caloriesPerHour: 100,
+        type: 'sport'
+    },
+    {
+        activity: 'Basketball',
+        caloriesPerHour: 80,
+        type: 'sport'
+    },
+    {
+        activity: 'Ping Pong',
+        caloriesPerHour: 80,
+        type: 'sport'
+    },
+    {
+        activity: 'Mountain Biking',
+        caloriesPerHour: 120,
+        type: 'cycling'
+    },
+    {
+        activity: 'Street Biking',
+        caloriesPerHour: 100,
+        type: 'cycling'
+    },
+    {
+        activity: 'Trail Riding',
+        caloriesPerHour: 140,
+        type: 'cycling'
+    },
+    {
+        activity: 'hiking',
+        caloriesPerHour: 120,
+        type: 'onFoot'
+    },
+    {
+        activity: 'running',
+        caloriesPerHour: 100,
+        type: 'onFoot'
+    },
+    {
+        activity: 'walking',
+        caloriesPerHour: 100,
+        type: 'onFoot'
+    }
+]
+
+const firstDDValue = 'sport';
+const timeDDValue = 1.5;
+const filteredWorkouts = workouts.filter(item => item.type === firstDDValue);
+
+filteredWorkouts.map(item => {
+    return <p> {item.intensityLevel * timeDDValue} </p>;
+})
+
+
+
+
         return (
             <div>
-                <h1>Now choose the workout you will be doing!</h1>
-                <select name="" id="workouts">
-                    {this.props.workouts.map(item => {
-                    console.log({item})
-                         return <option value={item}>{item}</option>
-                        })}
-                </select>
+                
             </div>
-        );
+        )
     }
 }
