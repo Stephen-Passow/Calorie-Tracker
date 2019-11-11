@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export default class ExcersizeTypes extends Component {
+    
 
     handleChange = e => {
         console.log(e.target.value)
@@ -9,7 +10,7 @@ export default class ExcersizeTypes extends Component {
     render() {
         return (
             <div>
-                <label htmlFor="workouts">First choose a type of excersize!</label>
+                <label htmlFor="workouts">First choose a type of excersize:  </label>
 
                 <select onChange={this.handleChange} id="workouts">
                     <option value="">--Please choose an option--</option>

@@ -7,17 +7,12 @@ export default class Excersizes extends Component {
     state = {
         exerciseType: "sports"
     }
-    // setExcersize() {
-    //     return 
-    // }
-    
-
     render() {
         return (
             <div>
-                <h1>Calorie Counter!</h1>
+                <h1>Calorie Counter App!</h1>
                 <ExcersizeTypes />
-                <Workouts /*workouts={this.getWorkouts()}*/ />
+                <Workouts />
                 <LenthOfWorkout />
             </div>
         )
