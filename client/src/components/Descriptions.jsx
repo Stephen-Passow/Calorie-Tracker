@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router-dom' 
 
 export default class Descriptions extends Component {
+
     render() {
         return (
             <div>
@@ -60,6 +61,7 @@ Spread your activities throughout the week. If you want to lose weight, meet spe
 
 Remember to check with your doctor before starting a new exercise program, especially if you have any concerns about your fitness, haven't exercised for a long time, have chronic health problems, such as heart disease, diabetes or arthritis.
 </div>
+<Link to='/'>Back</Link>
             </div>
         )
     }
