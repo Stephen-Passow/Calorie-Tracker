@@ -91,6 +91,8 @@ export default class Workouts extends Component {
         filteredWorkouts.map(item => {
             return <p> {item.intensityLevel * timeDDValue} </p>;
         })
+
+        
         return (
             <div>
                 <h6>Workouts:</h6>

@@ -5,9 +5,6 @@ import LenthOfWorkout from './LenthOfWorkout'
 import CaloriesPerHour from './CaloriesPerHour'
 
 export default class Excersizes extends Component {
-    state = {
-        exerciseType: "sports"
-    }
     render() {
         return (
             <div>
