@@ -7,7 +7,7 @@ export default class Workouts extends Component {
             {
                 activity: 'Soccer',
                 caloriesPerHour: 100,
-                 type: 'sport'
+                type: 'sport'
             },
             {
                 activity: 'Basketball',
@@ -49,11 +49,6 @@ export default class Workouts extends Component {
                 caloriesPerHour: 100,
                 type: 'onFoot'
             },
-            {
-                activity: 'swimming',
-                caloriesPerHour: 100,
-                type: 'swimming'
-            }
         ]
     }
 
@@ -61,34 +56,37 @@ export default class Workouts extends Component {
         console.log(e.target.type)
     };
     render() {
-        // const firstDDValue = [];
-        // const timeDDValue = 1.5;
 
         // const filteredWorkouts = workouts.filter(item => item.type  = firstDDValue);
-        
-        
-        // filteredWorkouts.map((item) => {
-            //     return <p> {item.caloriesPerHour * timeDDValue} </p>;
-            // })
 
-            
-            const unique = [...new Set(this.state.workouts.map(item => item.type))];
+
+        // filteredWorkouts.map((item) => {
+        //     return <p> {item.caloriesPerHour * timeDDValue} </p>;
+        // })
+
+        const allWorkouts = this.state.workouts.map(item => item.activity)
+
+        const unique = [...new Set(this.state.workouts.map(item => item.type))];
         return (
             <div>
                 <select>
                     {unique.map((workout) => {
-                        return(
+                        return (
                             <option>
                                 {workout}
                             </option>
                         )
                     })}
                 </select>
-           
-                {/* <label htmlFor='workouts'>Now choose a workout: </label>
-                <select onChange={this.handleChange} id="workouts">
-                    <option>{this.firstDDValue}</option>
-                </select> */}
+                <label htmlFor='workouts'>Now choose a workout: </label>
+                <select id="workouts">
+                    {allWorkouts.map(((workout) => {
+                        return (
+                            <option>{workout}</option>
+                        )
+                    }))}
+
+                </select>
             </div>
         )
     }

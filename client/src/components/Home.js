@@ -9,12 +9,11 @@ export default class Excersizes extends Component {
         return (
             <div>
                 <h1>Calorie Counter App!</h1>
-                {/* <ExcersizeTypes /> */}
                 <Workouts />
                 <LenthOfWorkout />
                 <Link to="/SubmitNewWorkout">Suggest a new Workout</Link>
                 <CaloriesPerHour />
-                <Link to ="/Description">Check out the benefits of excersizing!</Link>
+                <Link to="/Description">Check out the benefits of excersizing!</Link>
             </div>
         )
     }
