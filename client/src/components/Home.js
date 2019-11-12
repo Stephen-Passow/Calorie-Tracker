@@ -12,8 +12,9 @@ export default class Excersizes extends Component {
                 {/* <ExcersizeTypes /> */}
                 <Workouts />
                 <LenthOfWorkout />
-                <CaloriesPerHour />
                 <Link to="/SubmitNewWorkout">Suggest a new Workout</Link>
+                <CaloriesPerHour />
+                <Link to ="/Description">Check out the benefits of excersizing!</Link>
             </div>
         )
     }

@@ -13,10 +13,6 @@ const excersizeCollection = mongoose.model('excersize', ExcersizeSchema);
 const getAllExcersize = () => {
     return excersizeCollection.find({})
 }
-// //excersize by type
-// const getExcersizeByType = (excersizeId) => {
-//     return excersizeCollection.findById({excersizeId})
-// }
 //single excersize
 const getSingleExcersize = (id) => {
     return excersizeCollection.findById(id)
@@ -39,6 +35,5 @@ getAllExcersize,
 getSingleExcersize,
 createExcersize,
 updateExcersize,
-deleteExcersize,
-// getExcersizeByType
+deleteExcersize
 }

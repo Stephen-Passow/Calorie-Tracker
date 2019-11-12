@@ -56,10 +56,6 @@ export default class Workouts extends Component {
             }
         ]
     }
-    // getWorkouts() {
-    //     return workouts[this.state.exerciseType];
-    // }
-
 
     handleChange = e => {
         console.log(e.target.type)
@@ -70,11 +66,13 @@ export default class Workouts extends Component {
 
         // const filteredWorkouts = workouts.filter(item => item.type  = firstDDValue);
         
-        const unique = [...new Set(this.state.workouts.map(item => item.type))];
-
+        
         // filteredWorkouts.map((item) => {
-        //     return <p> {item.caloriesPerHour * timeDDValue} </p>;
-        // })
+            //     return <p> {item.caloriesPerHour * timeDDValue} </p>;
+            // })
+
+            
+            const unique = [...new Set(this.state.workouts.map(item => item.type))];
         return (
             <div>
                 <select>
