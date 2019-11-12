@@ -2,7 +2,6 @@
 const mongoose = require('./connection.js');
 
 const ExcersizeSchema = new mongoose.Schema({
-    user: String,
     name: String,
     caloriesPerHour: Number,
     type: String,
