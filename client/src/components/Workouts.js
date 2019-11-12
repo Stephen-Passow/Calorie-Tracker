@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 export default class Workouts extends Component {
     state = {
-        exerciseType: "sports",
         workouts: [
             {
                 activity: 'Soccer',
@@ -56,14 +55,6 @@ export default class Workouts extends Component {
         console.log(e.target.type)
     };
     render() {
-
-        // const filteredWorkouts = workouts.filter(item => item.type  = firstDDValue);
-
-
-        // filteredWorkouts.map((item) => {
-        //     return <p> {item.caloriesPerHour * timeDDValue} </p>;
-        // })
-
         const allWorkouts = this.state.workouts.map(item => item.activity)
 
         const unique = [...new Set(this.state.workouts.map(item => item.type))];

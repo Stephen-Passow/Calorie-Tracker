@@ -17,8 +17,8 @@ export default class SubmitNewWorkout extends Component {
         axios.get('/excersize')
             .then((res) => {
                 this.setState({ workoutList: res.data })
+                console.log(res.data)
             })
-
     }
 
 
@@ -47,6 +47,7 @@ export default class SubmitNewWorkout extends Component {
             <div>
                 <h1>Submit a new workout</h1>
                 <form onSubmit={this.createNewWorkout}>
+                    {/* <input type="text" name="user" placeholder="Your Name" onChange={this.handleChange} value={this.state.workout.user} /> */}
                     <input type="text" name="name" placeholder="Name of workout" onChange={this.handleChange} value={this.state.workout.name} />
                     <input type="text" name="type" placeholder="Type of workout" onChange={this.handleChange} value={this.state.workout.type} />
                     <input type="number" name="caloriesPerHour" placeholder="Calories burned per hour" onChange={this.handleChange} value={this.state.workout.caloriesPerHour} />
@@ -57,6 +58,7 @@ export default class SubmitNewWorkout extends Component {
 
                 </p>
                 <div>
+                    <h5>All requests:</h5>
                     {this.state.workoutList.map((result) => {
                         return (
                             <div key={result._id}>
