@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default class SubmitNewWorkout extends Component {
     state = {
-
+        newWorkout: {}
     }
 
     render() {
@@ -17,7 +17,13 @@ export default class SubmitNewWorkout extends Component {
                 <input type="number" name="caloriesPerHour" placeholder="Calories burned per hour" />
                 <button type="submit">Send Request</button>
                 {/* </form> */}
-                <Link to='/'>Back to home page</Link>
+            <p>
+        <Link to='/'>Back to home page</Link>
+
+        </p>
+        <p>
+
+        </p>
             </div>
         )
     }

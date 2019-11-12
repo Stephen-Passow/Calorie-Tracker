@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ExcersizeTypes from './ExcersizeTypes'
 import Workouts from './Workouts'
 import LenthOfWorkout from './LenthOfWorkout'
 import CaloriesPerHour from './CaloriesPerHour'
