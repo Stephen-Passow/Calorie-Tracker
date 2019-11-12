@@ -1,32 +1,8 @@
-# mern-template-project
-
-# Setup A New Project From This Template
-
-If you are starting a new project do the following:
-
-1. copy/download this directory to where you new project is located and rename
-   it to the name of your project.
-1. change your directory (`cd`) into the copied project template
-1. `npm install`
-1. `npm run dev`
-1. Open a new browser window and navigate to the URL http://localhost:3000/
-    here you should see `hello world` displayed after page load
-    updates should show up here automatically
-1. see the `client/src` `readme.md` file for more information on the react project
-
-# Setup A New Project Without This Template
-
-If you want to start a project without using this template directory do the
-following:
+[Heroku Link](https://project-3-sei.herokuapp.com/)
+![ERD Diagram](/src/images/erd.png)
+![Wireframe 1](/src/images/Wireframe_1)
+![Wireframe 2](/src/images/Wireframe_2)
 
 
-1. `mkdir <project-name>`
-1. `cd <project-name>`
-1. `echo "# <project-name>" > readme.md`
-1. `git init`
-1. `git add readme.md `
-1. `git commit -m "init repo with readme.md"`
-1. `npm init`
-1. `mkdir models views controllers`
-1. `touch ./server.js`
-# Fitness-Tracker
+
+The Fitness tracker app is a basic app that allows you to track how many calories you will/did burn during a specified workout. Simply select the type of workout and then the length of time and it will display approximately how many calories were burnt. You can also submit a request to add a certain workout and the admin may add it to the list. Finally click on the description page to read up on all the great benifits of daily excersizing. Thank you!
