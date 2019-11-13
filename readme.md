@@ -1,7 +1,7 @@
 [Heroku Link](https://project-3-sei.herokuapp.com/)
 ![ERD Diagram](/images/erd.png)
-![Wireframe 1](/images/Wireframe_1)
-![Wireframe 2](/images/Wireframe_2)
+![Wireframe 1](./images/Wireframe_1)
+![Wireframe 2](./images/Wireframe_2)
 
 
 
