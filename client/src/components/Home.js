@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Workouts from './Workouts'
-import CaloriesPerHour from './CaloriesPerHour'
 import { Link } from 'react-router-dom'
 
 export default class Excersizes extends Component {
