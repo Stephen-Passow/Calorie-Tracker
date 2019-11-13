@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Workouts from './Workouts'
+import Workouts from './Workouts.jsx'
 import { Link } from 'react-router-dom'
 
 export default class Excersizes extends Component {
@@ -8,12 +8,12 @@ export default class Excersizes extends Component {
             <div>
                 <h1>Calorie Counter App!</h1>
                 <br/>
-                <h4>Choose the type of activity you want</h4>
+                <h2>Choose the type of activity you want</h2>
                 <Workouts />
                 <br/>
-                <Link to="/SubmitNewWorkout">Suggest a new Workout</Link>
+                <Link className="links" to="/SubmitNewWorkout">Suggest a new Workout</Link>
                 <br/>
-                <Link to="/Description">Check out the benefits of excersizing!</Link>
+                <Link className="links" to="/Description">Click here to see the benefits of excersizing!</Link>
             </div>
         )
     }

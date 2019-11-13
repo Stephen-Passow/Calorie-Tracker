@@ -46,28 +46,28 @@ export default class SubmitNewWorkout extends Component {
         return (
             <div>
                 <h1>Submit a new workout</h1>
-                <form onSubmit={this.createNewWorkout}>
+                <form  onSubmit={this.createNewWorkout}>
                     {/* <input type="text" name="user" placeholder="Your Name" onChange={this.handleChange} value={this.state.workout.user} /> */}
-                    <input type="text" name="name" placeholder="Name of workout" onChange={this.handleChange} value={this.state.workout.name} />
-                    <input type="text" name="type" placeholder="Type of workout" onChange={this.handleChange} value={this.state.workout.type} />
-                    <input type="number" name="caloriesPerHour" placeholder="Calories burned per hour" onChange={this.handleChange} value={this.state.workout.caloriesPerHour} />
-                    <button type="submit">Send Request</button>
+                    <input className="form" type="text" name="name" placeholder="Name of workout" onChange={this.handleChange} value={this.state.workout.name} />
+                    <input className="form" type="text" name="type" placeholder="Type of workout" onChange={this.handleChange} value={this.state.workout.type} />
+                    <input className="form" type="number" name="caloriesPerHour" placeholder="Cals burned per hour" onChange={this.handleChange} value={this.state.workout.caloriesPerHour} />
+                    <button type="submit" className="btn">Send Request</button>
                 </form>
                 <p>
-                    <Link to='/'>Back to home page</Link>
 
                 </p>
                 <div>
-                    <h5>All requests:</h5>
+                    <h2>All requests:</h2>
                     {this.state.workoutList.map((result) => {
                         return (
-                            <div key={result._id}>
+                            <div className="newWorkouts" key={result._id}>
                                 {result.name}
                             </div>
                         )
                     })
-                    }
+                }
                 </div>
+<Link className="links" to='/'>Back to home page</Link>
             </div>
         )
     }
